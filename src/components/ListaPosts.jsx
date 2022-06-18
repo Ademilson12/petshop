@@ -9,7 +9,7 @@ const ListaPost = ({ url }) => {
 
     useEffect(() => {
         busca(url, setPosts)
-      }, [])
+      }, [url])
       
 
     busca(url, setPosts)
