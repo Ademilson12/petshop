@@ -1,13 +1,12 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import ListaPost from "../components/ListaPosts";
+import React from 'react'
+import { useParams } from 'react-router-dom'
+import ListaPost from '../components/ListaPost'
 
-
-const SubCategoria = () => {
-    const {subcategoria} = useParams();
-    return (
-        <ListaPost url={`/posts?subcategorias=${subcategoria}`} />
-    );
+const SubCategoria = () => { 
+  const { subcategoria } = useParams()
+  return(
+    <ListaPost url={`/posts?subcategoria=${subcategoria}`} />
+  )
 }
 
-export default SubCategoria;
+export default SubCategoria
